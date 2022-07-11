@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ED-Travel Inicio</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <!-- CSS do Projeto -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+      
+  </head>
+  <body>
+    <div class="container-fluid" id="nav-container">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light-color">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./imagens/logo transp.png" class="d-inline-block align-top" alt="Logo ED-Travel"></a>
+            <button class="navbar-toggler" type="button"	ii data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false"  aria-label="Toggle navigation">
+              <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="main_nav">
+              <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre a Agência</a></li>
+                <li class="nav-item"><a class="nav-link" href="passagem.html">Passagens e Ofertas</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contatos</a></li>
+                <li class="nav-item dropdown"></li>
+              </ul>
+            </div> 
+          </div> 
+        </nav>
+      </header>
+    </div>  
+    <!-- Pesquisar Passagens -->
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="container" id="container-bg" class="col-md-6">
+            <div id="containerPass">
+              <strong><h2>Passagens Aéreas</h2></strong> 
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Ida e Volta</label>
+              </div>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Só Ida</label>
+            </div>
+            <div>
+              <div>
+                <div class="form-control">
+                <div> 
+                  <label for="browser" class="form-label">Insira sua cidade de origem</label>
+                  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Pesquisar origem...">
+                  <datalist id="datalistOptions">
+                    <option value="Aeroporto Internacional de Brasília / Presidente Jucelino Kubitschek Brasília DF">
+                    <option value="Aeroporto Internacional de São Paulo / Congonhas	Congonhas	SP">
+                    <option value="Aeroporto Internacional de Salvador / Deputado Luis Eduardo Magalhães	Salvador	BA">
+                    <option value="Aeroporto Internacional do Recife/ Guararapes – Gilberto Freyre	Recife	PE">
+                    <option value="Aerorporto Santos Dumont	Santos Dumont	RJ">
+                    <option value="Aeroporto Internacional de Fortaleza / Pinto Martins	Fortaleza	CE">
+                  </datalist>
+                </div>
+                <div>
+                  <label for="browser" class="form-label">Insira sua cidade de Destino</label>
+                  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Pesquisar destino...">
+                  <datalist id="datalistOptions">
+                    <option value="Aeroporto Internacional de Brasília / Presidente Jucelino Kubitschek Brasília DF">
+                    <option value="Aeroporto Internacional de São Paulo / Congonhas	Congonhas	SP">
+                    <option value="Aeroporto Internacional de Salvador / Deputado Luis Eduardo Magalhães	Salvador	BA">
+                    <option value="Aeroporto Internacional do Recife/ Guararapes – Gilberto Freyre	Recife	PE">
+                    <option value="Aerorporto Santos Dumont	Santos Dumont	RJ">
+                    <option value="Aeroporto Internacional de Fortaleza / Pinto Martins	Fortaleza	CE">
+                  </datalist>
+                </div>
+                <div class="form-data">
+                  <form>
+                    <div>
+                      <label for="diaa">Data da Ida:</label>
+                      <input type="date" id="bday" name="diaa" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+                      <span class="validity"></span>
+                    </div>
+                    <div>
+                      <label for="diaa">Data da Volta:</label>
+                      <input type="date" id="bday" name="diaa" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+                      <span class="validity"></span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              </div>
+              <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>Quantidade de Adultos</option>
+                  <option value="1">0</option>
+                  <option value="2">1</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                </select>
+                <label for="floatingSelect">Adulto</label>
+              </div>
+              <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>Quatidade de menor</option>
+                  <option value="1">0</option>
+                  <option value="2">1</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                </select>
+                <label for="floatingSelect">Menor</label>
+              </div>
+              <div class="btn-buscar">
+                <button type="button" class="btn btn-warning btn-lg"><i class="bi bi-search"></i>Buscar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="img-fluid" class="rounded-pill" src="./Imagens/Design (5).png" alt="Viagens">
+          </div>
+        </div>  
+        <!-- Slider -->
+        <div class="Container" id="slider-container">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li 
+                data-bs-target="#carouselExampleDark" 
+                data-bs-slide-to="0" 
+                class="active" 
+                aria-current="true" 
+                aria-label="Slide 1">
+              </li>
+              <li 
+                data-bs-target="#carouselExampleDark" 
+                data-bs-slide-to="1" 
+                aria-label="Slide 2">
+              </li>
+              <li 
+                data-bs-target="#carouselExampleDark" 
+                data-bs-slide-to="2" 
+                aria-label="Slide 3">
+              </li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="7000">
+                <img src="./imagens/banner 1.png" class="d-block w-100" alt="promoções">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>Melhores promoções de viagens pelo mundo.</h4>
+                  <p>Encontre as melhores ofertas e promoções com reserva flexivel.</p>
+                  <a href="#" class="btn btn-dark-secundary">Ver Ofertas</a>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="7000">
+                <img src="./imagens/banner 2.png" class="d-block w-100" alt="planejamento">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>Que tal planejar sua proxima viagem?</h4>
+                </div>
+              </div> 
+              <div class="carousel-item" data-bs-interval="7000">
+                <img src="./imagens/banner 5.png" class="d-block w-100" alt="viagens">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>Faça uma viagem curta e aproveite para descobrir novos roteiros.</h4>
+
+                </div>
+              </div>
+              <a class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
+              </a>
+              <a class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
+              </a> 
+            </div>
+          </div>
+          <!--Banners-->
+          <div>
+            <div class="col-12 col-md-10 offset-md-1" id="banners">
+              <div class=" row">
+                <div class="col-12 col-md-4">
+                  <div class="card text-center">
+                    <h4><i class="bi bi-file-earmark-person"></i></h4>
+                    <div class="card-body">
+                      <h5 class="card-title primary-color">Documentação necesssária para comprar e viajar</h5>
+                      <p class="card-text secundary-color">Para comprar a sua viagem na ED-Travel GO, você deve ter os documentos de identidade, os nomes, os sobrenomes e as datas de nascimento dos passageiros. Antes de viajar, revise o detalhe da sua reserva e saiba quais são os vistos e vacinas obrigatórios no país de destino. Isso inclui as escalas nas viagens de avião e os tours que você realizar durante a sua viagem. Se uma criança precisar viajar sozinha ou acompanhada, deverá contar com uma autorização especial para sair do país.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="card text-center">
+                    <h4><i class="bi bi-bag-check-fill"></i></h4>
+                      <div class="card-body">
+                        <h5 class="card-title primary-color">É possível alterar ou cancelar uma compra?</h5>
+                        <p class="card-text secundary-color">Na ED-Travel GO você pode fazer a alteração ou o cancelamento de uma reserva, mas leve em consideração que alguns provedores ou tarifas não permitem ou cobram um custo adicional para isso. Você também pode cancelar uma reserva para todos ou para alguns dos passageiros. O que você não pode fazer é alterar o titular da reserva. Lembre-se de revisar as políticas de alteração e cancelamento da sua reserva.</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="card text-center">
+                    <h4><i class="bi bi-pin-map-fill"></i></h4>
+                    <div class="card-body">
+                      <h5 class="card-title primary-color">Por que devo escolher a ED-Travel GO para a minha viagem?</h5>
+                      <p class="card-text secundary-color">A ED-Travel GO é uma das agências de viagens online com maior trajetória na América Latina e recomendada por milhares de viajantes. Aproveite as ofertas e promoções no nosso site e conheça o mundo todo. Compre sua viagem na Decolar através da web ou da app. Viaje com a confiança de que você pode contar conosco para o que precisar.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div> 
+        </div> 
+        <!--Opção Caixa-->
+        <div class="card-group">
+          <div class="card">
+            <img src="./imagens/ft1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Guia de Viagem</h5>
+              <p class="card-text">Encontre aqui nosso guia de viagem</p>
+              <p class="card-text">Roteiros definidos, baseado na experiencia e depoimentos dos viajantes para te ajudar a curtir a melhor rota e garantir uma viagem mais programada.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Veja Mais...</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./imagens/ft2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Zero Rotina</h5>
+              <p class="card-text">Fuja Agora mesmo da Rotina.</p>
+              <p class="card-text">Volte a sonhar com a sua próxima viagem. Encontre reservas flexíveis e os melhores preços para voos e pacotes</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Veja Mais...</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./imagens/ft4.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sem preocupações</h5>
+              <p class="card-text">Registre os melhores momentos</p>
+              <p class="card-text">Temos uma lista de fotografos reconhecidos e disponiveis, para registar os seus melhores momentos, para que você curta melhor seu momento sem se preocupar.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Veja Mais...</a>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </main>
+
+    <br>
+    <footer id="rodape">
+      <p id="formas_pagamentos"><b>Formas de Pagamento</b></p>
+      <img id="imagem" src="./Imagens/formasdepagamento2.webp" alt="Formas de Pagamento">
+      <p>&copy; Recode Pro - Todos os direitos Reservados</p>
+    </footer>   
+  </body>
+</html>

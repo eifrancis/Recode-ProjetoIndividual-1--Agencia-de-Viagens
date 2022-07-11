@@ -1,0 +1,298 @@
+/* estilos gerais*/
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding:0;
+    
+}
+
+.bg-primary-color{
+    background-color: #ffffff;
+}
+
+.bg-secundary{
+    background-color: #ad35b5;
+}
+
+
+.bg-dark-color{
+    background-color: #878080;
+}
+
+.primary-color{
+    color: #051216;
+}
+.secundary-color{
+    color: #1aa7d0;
+}
+h2{
+    text-align: center;
+    text-decoration: #0654a8;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*NAVBAR barra de navegação*/
+#nav-container{
+    margin-bottom: 1em;
+    margin-top: 1em;
+    background-image: url(./imagens/banner\ 6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: initial;
+}
+
+.navbar{
+    border-bottom: 1px solid #64afff;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-brand{
+
+    color:#fff;
+
+}
+
+.navbar-brand img{
+    width: 250px;
+    
+}
+
+.navbar-toggler{
+    background-color: #64afff;;
+    
+}
+
+#main_nav{
+    
+    justify-content: flex-end;
+}
+
+#main_nav a{
+    color: #000;
+}
+
+#main_nav .nav-link:hover{
+    color: #1aa7d0;
+}
+.dropdown-menu .dropdown-item:hover{
+    color: #1aa7d0;
+    background-color: #e0dcdc;
+}
+
+.pass-container{
+    background-color:#ad35b5 ;
+    
+}
+
+/*Pesquisar Passagens e formularios*/
+ 
+#container-bg{
+    background-image:url(imagens/logo\ BG\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    border-radius: 1em;
+    background-position: center;
+    margin-left: 10%;
+}
+
+#containerPass h2 {
+    text-align: center;
+    text-decoration: #000;
+    margin-top: 1em;
+
+}
+.form-check{
+    display: flow-root;
+    margin-bottom: 1em;
+    text-align: center;
+    
+}
+.form-floating{
+    display: flex;
+    margin-bottom: 1em;
+    align-items:center;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.form-control{
+    display:inline-table;
+    margin-bottom: 2em;
+    width: 100%;
+    border-radius: 1em;
+
+}
+
+.form-data{
+    text-align: center;
+}
+
+.btn-buscar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.col-md{
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 40%;
+    margin-right: auto;
+}
+
+.img-fluid{
+    border-radius: 1em;
+}
+
+/*Slider*/
+#carouselExampleDark{
+    margin-top: 6em;
+    margin-bottom: 2em;
+}
+
+#carouselExampleDark .carousel-caption{
+    bottom: 1rem;
+}
+
+#carouselExampleDark .carousel-caption h4{
+    font-size: 2.0em;
+    text-shadow: #000 2px 2px;
+}
+
+#carouselExampleDark .carousel-caption p{
+    font-size: 1.0em;
+    text-shadow: #000 1px 1px;
+    color: #c021cc;
+}
+
+.btn{
+    border-radius: 0;
+}
+
+#carouselExampleDark .btn{
+    padding: 0.3em 0.8em;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+/*Banner*/
+#banner{
+    margin-bottom: 1em;
+    
+}
+/*Caixa de Opções*/
+
+.col-md-6{
+    width: auto;
+}
+
+.card-group{
+    padding: inherit;
+
+}
+
+/*Rodapé*/
+
+#rodape {
+    margin-top: 1em;
+    text-align: center;
+    justify-content: end;
+    background-image: url(./imagens/banner\ 6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: initial;
+
+}
+
+#rodape p{
+    font-size: 14px;
+}
+
+#imagem{
+    width: 200px;
+}
+
+/*Sobre a Empresa*/
+#about-area1{
+    margin-top: 2em;
+    margin-bottom: 1em;
+
+}
+
+.main-title{
+    color: #0654a8;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.about-title{
+    font-size: 20px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #0654a8;
+    text-align:center;
+    text-transform: uppercase;
+    font-size: bold;
+}
+
+
+#about-list1{
+    list-style: none;
+    padding-left: 0;
+    
+
+}
+
+#about-list1{
+    line-height: 30px;
+    color: #0654a8;
+
+}
+
+#about-list1 i{
+    color: #ad35b5;
+
+}
+.row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 1em;
+    
+}
+
+.col-12{
+    text-align: center;
+    font-size: bold;
+    margin-bottom: 1em;
+}
+
+.col-12 h3{
+    margin-bottom: 1em;
+}
+
+
+.col-sem-margem{
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+
+.img-fluid{
+    margin-top: 2em;  
+    padding: 0; 
+  
+
+}
+
+/*Contatos*/
+.about-table{
+    padding: 20px;
+    display: grid;
+    justify-content: normal;
+    text-align: center;
+}
